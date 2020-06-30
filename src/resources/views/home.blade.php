@@ -14,9 +14,7 @@
                         </div>
                     @endif
 
-                    <li class="nav-item">
-                                <a class="nav-link" href="users">Kullanıcılar</a>
-                    </li>
+                    <a class="nav-link" href="users">Kullanıcılar</a>
                 </div>
             </div>
         </div>
