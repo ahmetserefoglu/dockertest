@@ -1,6 +1,6 @@
 # docker-test-project
 
-## Kulllanım
+## Kullanım
 
 Kullanım için [Docker](https://docs.docker.com/docker-for-mac/install/)  gereklidir.
 
@@ -13,7 +13,7 @@ Local bilgisayarınızda kullanıcı girişlerini test etmek için ;
 - `docker-compose run --rm npm run dev`
 - `docker-compose run --rm artisan migrate` 
 
-**EkBilgiler: ** Container içerisinde çalışan portlar docker-compose.yml içerisinde kontrol edebilirsiniz.
+**EkBilgiler:** Container içerisinde çalışan portlar docker-compose.yml içerisinde kontrol edebilirsiniz.
 
 - **nginx** - `:8080`
 - **mysql** - `:3306`
@@ -21,3 +21,5 @@ Local bilgisayarınızda kullanıcı girişlerini test etmek için ;
 - **npm**
 - **composer**
 - **artisan**
+
+
