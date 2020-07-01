@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/users',function(){
-    $users = User::all();
+    $users = User::paginate(10);
 
     return view('users',['users' => $users]);
 })->middleware('verified');
