@@ -27,3 +27,13 @@ Route::get('/users',function(){
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/gorev', 'HomeController@gorev')->name('gorev');
+
+Route::resource('kurumsalajans','KurumsalAjansController'); 
+/*Route::get('/kurumsalajans', 'KurumsalAjansController@index')->name('kurumsalajans.index');
+Route::get('/kurumsalajans/create', 'KurumsalAjansController@create')->name('kurumsalajans.create');
+Route::post('/kurumsalajans/store', 'KurumsalAjansController@store')->name('kurumsalajans.store');
+Route::get('/kurumsalajans/edit/{id}', 'KurumsalAjansController@edit')->name('kurumsalajans.edit');
+Route::post('/kurumsalajans/update', 'KurumsalAjansController@update')->name('kurumsalajans.update');
+Route::post('/kurumsalajans/destroy/{id}', 'KurumsalAjansController@destroy')->name('kurumsalajans.destroy');*/
