@@ -39,4 +39,6 @@ Local bilgisayarınızda kullanıcı girişlerini test etmek için ;
 - **composer**
 - **artisan**
 
+**EkBilgiler:2** Crud Operation Test and Vue Operaion Test
+- **gorevler** 
 
