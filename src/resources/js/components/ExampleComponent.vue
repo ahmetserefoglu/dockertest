@@ -1,23 +1,42 @@
 <template>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
+        <pulse-loader
+            :loading="loading"
+            :color="color"
+            :size="size"
+        ></pulse-loader>
+        <ring-loader
+            :loading="loading"
+            :color="color1"
+            :size="size"
+        ></ring-loader>
+        <bounce-loader
+            :loading="loading"
+            :color="color"
+            :size="size"
+        ></bounce-loader>
     </div>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
+import PulseLoader from "vue-spinner/src/PulseLoader.vue";
+import RingLoader from "vue-spinner/src/RingLoader.vue";
+import BounceLoader from "vue-spinner/src/BounceLoader.vue";
+
+export default {
+    data() {
+        return {
+            color: "#cc181e",
+            color1: "#5bc0de",
+            size: "45px",
+            margin: "2px",
+            radius: "2px"
+        };
+    },
+    components: {
+        PulseLoader,
+        RingLoader,
+        BounceLoader
     }
+};
 </script>

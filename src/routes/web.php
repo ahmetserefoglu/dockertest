@@ -29,6 +29,9 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/pricing', 'PricingController@index')->name('pricing');
+Route::post('/pricingresult', 'PricingController@show')->name('pricingresult');
+
 Route::get('/gorev', 'HomeController@gorev')->name('gorev');
 
 Route::resource('kurumsalajans','KurumsalAjansController'); 

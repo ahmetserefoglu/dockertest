@@ -41,4 +41,4 @@ Local bilgisayarınızda kullanıcı girişlerini test etmek için ;
 
 **EkBilgiler:2** Crud Operation Test and Vue Operaion Test
 - **gorevler** 
-
+- **pricing** 
